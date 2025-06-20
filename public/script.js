@@ -15,7 +15,7 @@ form.addEventListener('submit', function (e) {
   const typingIndicator = showTyping();
 
   // Kirim pesan ke backend
-  fetch('http://localhost:3000/generate-text', {
+  fetch('/generate-text', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
